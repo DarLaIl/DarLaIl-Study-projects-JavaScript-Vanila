@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Дом у озера</title>
+      <link rel="icon" href="data:,">
+      <link rel="stylesheet" href="Lake.css">
+   </head>
+   <body>
+      <h1>Дом у озера</h1>
+      <div class="container">
+         <div class="box">
+            <h3>Описание</h3>
+            <p> <b><i>Кейт Форстер</i></b> после расставания с парнем решает переехать, чтобы начать всё с <i>чистого листа</i>, а заодно быть ближе к работе. Она оставляет в почтовом ящике письмо для следующего жильца, объяснив некоторые нюансы. </p>
+            <p> Новым съёмщиком оказывается <b> <i>Алекс Уайлер</i> </b>  — одинокий архитектор, отец которого и построил этот прекрасный дом. Он читает послание, но не может понять, почему описанное Кейт не совпадает с действительностью. Это <i>побуждает</i>  Алекса написать ответ.</p>
+            <p> Через несколько дней переписки герои понимают, что живут в разное время: он в <b>2004 году</b>, она — <b>в 2006.</b>  И лишь загадочный почтовый ящик служит им соединяющим мостиком.</p>
+         </div>
+         <div class="box">
+            <h3>Актеры:</h3>
+            <ul>
+               <li><a class="actor">Киану Ривз </a></li>
+               <li><a class="actor">Сандра Буллок</a></li>
+            </ul>
+            <h3><a class="movie">Смотреть трейлер</a></h3>
+         </div>
+      </div>
+      <a href="../index.html"> <button id="home">Назад</button></a>
+      <div id="modalCardMovie">
+         <button id="closeModal" type="button" aria-label="Close">
+            <span aria-hidden="true">X</span>
+         </button>
+         <h2 id="heading"></h2>
+         <div>
+            <iframe id="trailer" width="550" height="315" src="" title="YouTube video player" frameborder="0" allow="autoplay; picture-in-picture; web-share" allowfullscreen></iframe>
+         </div>
+      </div>
+
+
+      <div id="modalCardActor">
+         <button id="closeModalActor" type="button" aria-label="Close">
+            <span aria-hidden="true">X</span>
+         </button>
+         <div id="photos">
+            <img id="then" src="" alt="actors then" width="300px">
+            <img id="now" src="" alt="actors now" width="300px">
+         </div>
+         <div class="innerText">
+            <h2 id="headingActor"></h2>
+            <p id="descriptionActor"></p>
+         </div>
+      </div>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+   <script src="Lake.js"></script>
+   </body>
+</html>

@@ -11,7 +11,7 @@
 
  <h4>Functionality:</h4>
  <ul> 
-  <li> Film Info</li>
+  <li> Film Info slides</li>
   <li> Display the film trailer in a separate pop-up</li>
   <li> Display information about the film's main actors in a separate pop-up </li>
   <li> Gsap animation</li>

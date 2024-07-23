@@ -1,0 +1,380 @@
+body {
+    position: relative;
+    background-color: #000000;
+    margin: 0;
+    height: 100vh;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+#bg-img {
+    position: absolute;
+    top: 0;
+    right:0;
+    z-index: -1;
+    height: 100vh;
+}
+#bg-small {
+    display: none;
+}
+h1 {
+    opacity: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+    padding: 0;
+}
+.container {
+    margin: 20px;
+    opacity: 0;
+    width: 800px;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+}
+.boxOne, .boxTwo, .boxThree, .boxFour {
+    width: 800px;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 36px;
+    box-shadow:  -5px -5px 5px #ffffff,
+                 5px 5px 5px #ffffff;
+    font-size: 18px;
+}
+.boxTwo, .boxThree, .boxFour {
+    display: none;
+    opacity: 0;
+}
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+a:hover {
+    text-shadow: 3px 0px 5px #f6f6f6;
+    cursor: pointer;
+}
+.btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    padding: 0;
+}
+#back {
+    display: none;
+}
+#home {
+    color: #000000;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    height: 30px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+#modalCardMovie {
+    display: none;
+    opacity: 0;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 30px;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow:  10px 10px 13px #a4a4a4,
+                 -10px -10px 13px #ffffff;
+    width: 550px;
+    height: 630px;
+    padding: 10px;
+    position: absolute;
+    top:25px;
+    left:600px;
+    z-index: 1;
+}
+#modalCardActor {
+    display: none;
+    opacity: 0;
+    align-items: center;
+    border-radius: 30px;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow:  10px 10px 13px #a4a4a4,
+                 -10px -10px 13px #ffffff;
+    height: 630px;
+    padding: 10px;
+    position: absolute;
+    top:25px;
+    left: 50px;
+    z-index: 1;
+}
+.innerText {
+    height: 630px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 550px;
+    text-align: center;
+}
+
+#photos img {
+    margin: 10px;
+}
+#heading  {
+    text-align: center;
+    color: #000000;
+    margin: 0;
+}
+#headingActor {
+    color: #000000;
+    margin: 0;
+}
+#descriptionActor {
+    padding: 10px;
+    font-size: 17px;
+    color: #000000;
+}
+#description  {
+    
+    font-size: 17px;
+    text-align: center;
+    color: #000000;
+}
+#closeModal {
+    color: #000000;
+    margin: 5px;
+    width: 60px;
+    height: 30px;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+    padding: 0;
+    align-self: flex-end;
+}
+#closeModalActor {
+    color: #000000;
+    margin: 5px;
+    width: 60px;
+    height: 30px;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+    padding: 0;
+    align-self: flex-start;
+    order: 3;
+}
+#photos {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+@media all and (max-width:1024px) {
+    #bg-img {
+        height: 110vh;
+    }
+    body {
+        height: fit-content;
+    }
+    .boxOne, .boxTwo, .boxThree, .boxFour {
+        width: 800px;
+        margin: 10px;
+        font-size: 20px; 
+
+        color: #000000;
+        padding: 10px;
+        background: rgba(255, 255, 255, 0.5);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px); 
+    } 
+    #home {
+        padding:10px;
+        left: 0;
+        top: 0;
+        font-size: 15px;
+        width: 60px;
+        height: 60px;
+    }
+    h1 {
+        font-size: 40px;
+        margin: 10px;
+    }
+    a {
+        color: #000000;
+    }
+    #modalCardMovie {
+        width: 800px;
+
+        height: fit-content;
+        padding: 10px;
+        left:250px;
+    }
+
+    #modalCardActor {
+        width: 800px;
+
+        height: fit-content;
+        padding: 10px;
+        top:0;
+    }
+    #photos {
+        flex-direction: column;
+    }
+    .innerText {
+        height: fit-content;
+        width: 400px;
+    }
+    #closeModalActor {
+        order: 3;
+        align-self: flex-start;
+    }
+} 
+@media all and (max-width:830px) {
+    body {
+        background-image: url("hog.jpg");
+        background-size: cover;
+        background-position: right;
+        background-repeat: no-repeat;
+        align-items: center;
+        height: 120vh;
+    }
+    #bg-img {
+        display: none;
+    }
+    h1 {
+        font-size: 50px;
+    }
+    .container {
+        width: 600px;
+        height: fit-content;
+
+        align-items: center;
+        justify-content: center;
+    }
+    .boxOne, .boxTwo, .boxThree, .boxFour {
+        width: 600px;
+        height: fit-content;
+        padding: 20px;
+        font-size: 25px;
+
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+    #modalCardMovie {
+        width: 600px;
+        top: 0px;
+        left:100px;
+    }
+    #heading  {
+        font-size: 35px;
+    }
+    #description  {
+        font-size: 28px;
+    }
+    #modalCardActor {
+        flex-direction: column;
+        width: 600px;
+        top: 0px;
+        left:0px;
+    }
+    #headingActor {
+        font-size: 25px;
+    }
+    #descriptionActor {
+        font-size: 20px;
+    }
+    #photos {
+        flex-direction: row;
+    }
+    #home {
+        font-size: 28px;
+        width: fit-content;
+    }
+    .innerText {
+        width: 600px;
+    }
+    #closeModalActor {
+        order: 0;
+        align-self: flex-end;
+    }
+
+} 
+
+@media all and (max-width:550px) {
+    #bg-img {
+        display: none;
+    }
+    #bg-small {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right:0;
+        z-index: -1;
+        min-height: 120vh;
+    }
+    h1 {
+        font-size: 30px;
+        margin: 10px;
+    }
+    .container {
+        width: 300px;
+        align-items: flex-start;
+    }
+    .boxOne, .boxTwo, .boxThree, .boxFour {
+        width: 300px;
+        margin: 10px;
+        padding: 10px;
+        font-size: 20px;
+    }
+    .btn {
+        margin-top: 180px;
+        width: 30px;
+        height: 30px;
+    }
+    .btn img {
+        width: 30px;
+    }
+    #home {
+        padding: 5px;
+        left: 0;
+        top: 0;
+        font-size: 15px;
+        width: 60px;
+        height: 40px;
+    }
+    #modalCardMovie {
+        width: 300px;
+        top:50px;
+        left:0;
+    }
+    #heading  {
+        font-size: 20px;
+    }
+    #description  {
+        font-size: 18px;
+    }
+    #trailer {
+        width: 300px;
+    }
+    #modalCardActor {
+        width: 300px;
+        padding: 10px;
+        top:50px;
+        left: 0;
+    }
+    #headingActor {
+        font-size: 20px;
+    }
+    #descriptionActor {
+        font-size: 18px;
+    }
+    #photos {
+        flex-direction: column;
+    }
+    .innerText {
+        height: fit-content;
+        width: 300px;
+    }
+}

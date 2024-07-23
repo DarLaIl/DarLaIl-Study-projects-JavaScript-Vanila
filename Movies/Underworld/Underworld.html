@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Другой мир</title>
+      <link rel="icon" href="data:,">
+      <link rel="stylesheet" href="Under.css">
+   </head>
+   <body>
+      <h1>Другой мир</h1>
+      <div class="container">
+         <button class="btn" id="back"><img src="arrowsBack.png" alt="arrows" width="40px"></button>
+         <div class="box One">
+            <h3>Описание</h3>
+            <p> <b><i>Другой мир</i></b> это серия фильмов <i>ужасов в жанре мрачного фэнтези</i>, созданных Леном Уайзманом, Кевином Гревиу и Дэнни Макбрайдом, в которых рассказывается о персонажах, вовлеченных в войну между <b>вампирами</b> и <b>оборотнями.</b> </p>
+            <p> Столетиями властители царства мрака, вампиры и оборотни ведут беспощадную <b>войну</b>, невидимую человеческому взору. Бесстрашная <b>Селина</b>, <i>воин-вампир</i>, каждую ночь истребляет <i>оборотней</i>, влекомая неутолимой жаждой мести. <br>
+               Ее <i>клан</i> уверен, что вампирам удалось одержать верх над заклятыми врагами, но Селина подозревает, что у оборотней есть <b>тайный план</b>, сулящий гибель ее роду.
+            </p>
+            <p> В центре этого плана – <b>смертный парень Майкл</b>. Его генетический код – <i>ключ</i> к созданию сверхсущества, которое будет бессмертно и неуязвимо. <br>
+               Теперь Селина должна любой ценой первой добраться до него, чтобы определить исход вечного противостояния двух могущественных рас, которых люди до сих пор считали мифом...
+            </p>
+         </div>
+         <div class="box Two">
+            <h3>Фильмы серии:</h3>
+            <ul>
+               <li><a class="movie">Другой мир (2003)</a></li>
+               <li><a class="movie">Другой мир: Эволюция (2006)</a></li>
+               <li><a class="movie">Другой мир: Восстание ликанов (2009)</a></li>
+               <li><a class="movie">Другой мир: Пробуждение (2012)</a></li>
+               <li><a class="movie">Другой мир: Войны крови (2016)</a></li>
+            </ul>
+         </div>
+         <div class="box Three">
+            <h3>Главные актеры:</h3>
+            <ul>
+               <li><a class="actor">Кейт Бекинсейл </a></li>
+               <li><a class="actor">Скотт Спидмэн</a></li>
+            </ul>
+         </div>
+         <button class="btn" id="next"><img src="arrows.png" alt="arrows" width="40px"></button>
+      </div>
+      <a href="../index.html"> <button id="home">Назад</button></a>
+
+      <div id="modalCardMovie">
+         <button id="closeModal" type="button" aria-label="Close">
+            <span aria-hidden="true">X</span>
+         </button>
+         <h2 id="heading"></h2>
+         <p id="description"></p>
+         <div>
+            <iframe id="trailer" width="550" height="315" src="" title="YouTube video player" frameborder="0" allow="autoplay; picture-in-picture; web-share" allowfullscreen></iframe>
+         </div>
+      </div>
+
+      <div id="modalCardActor">
+         <button id="closeModalActor" type="button" aria-label="Close">
+            <span aria-hidden="true">X</span>
+         </button>
+         <div id="photos">
+            <img id="then" src="" alt="actors then" width="300px">
+            <img id="now" src="" alt="actors now" width="300px">
+         </div>
+         <div class="innerText">
+            <h2 id="headingActor"></h2>
+            <p id="descriptionActor"></p>
+         </div>
+      </div>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+   <script src="Under.js"></script>
+      </div>
+   </body>
+</html>

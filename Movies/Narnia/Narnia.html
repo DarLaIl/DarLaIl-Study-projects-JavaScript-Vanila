@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Хроники Нарнии</title>
+      <link rel="icon" href="data:,">
+      <link rel="stylesheet" href="narnia.css">
+   </head>
+   <body>
+
+      <h1>Хроники Нарнии</h1>
+      <div class="container">
+         <button class="btn" id="back"><img src="arrowsBack.png" alt="arrows" width="40px"></button>
+         <div class="box One">
+            <h3>Описание</h3>
+            <p> <b><i>«Хроники Нарнии»</i></b> — американская серия фильмов и медиа-франшиза, основанная на серии романов <b> <a href="https://ru.wikipedia.org/wiki/%D0%A5%D1%80%D0%BE%D0%BD%D0%B8%D0%BA%D0%B8_%D0%9D%D0%B0%D1%80%D0%BD%D0%B8%D0%B8#%D0%A1%D0%BE%D0%B4%D0%B5%D1%80%D0%B6%D0%B0%D0%BD%D0%B8%D0%B5_%D0%BA%D0%BD%D0%B8%D0%B3" target="_blank">«Хроники Нарнии» К. С. Льюиса.</a></b> </p>
+            <p> <b>Четверых детей</b> <i>(13-летнего Питера, 12-летнюю Сьюзен, 11-летнего Эдмунда и 8-летнюю Люси Певенси)</i> мама отправляет из подвергающегося бомбёжкам Лондона в деревню, к старому профессору Кёрку — другу семьи. <br> 
+               Там младшая из детей — <b>Люси</b> — во время игры в прятки случайно обнаруживает <b>шкаф</b> в одной из комнат и залезает в него. Так она попадает в заснеженный лес, расположенный в стране под названием <b><i>Нарния.</i></b>  <br>
+               Дети попадают в <i>сказочную страну</i>, населённую волшебными существами и говорящими животными, где под руководством <b>Аслана</b>, мудрого и могущественного льва, их ждут захватывающие приключения: <i>борьба со злой колдуньей, путешествие на край света и другие.</i> 
+            </p>
+            <p> Из <b>семи книг</b> были адаптированы три, которые в совокупности собрали более <i>1,5 миллиардов долларов по всему миру.</i> </p>   
+         </div>
+         <div class="box Two">
+            <h3>Фильмы серии:</h3>
+            <ol class = "itemMovie">
+               <li><a class="movie one">«Лев, колдунья и платяной шкаф» (2005 г.)</a></li>
+               <li><a class="movie two">«Принц Каспиан» (2008 г.)</a></li>
+               <li><a class="movie three">«Путешествие покорителя зари» (2010 г.)</a></li>
+            </ol>
+         </div>
+         <div class="box Three">
+            <h3>Главные актеры:</h3>
+            <ul class = "itemMovie">
+               <li>Люси Певенси — <a class="actor">Джорджи Хенли</a></li>
+               <li>Эдмунд Певенси — <a class="actor">Скандар Кейнс</a></li>
+               <li>Питер Певенси — <a class="actor">Уильям Моусли</a></li>
+               <li>Сьюзен Певенси — <a class="actor">Анна Попплуэлл</a></li>
+               <li>Принц Каспиан — <a class="actor">Бен Барнс</a></li>
+               <li>Юстас Вред — <a class="actor">Уилл Поултер</a></li>
+               <li>Колдунья — <a class="actor">Тильда Суинтон</a></li>
+            </ul>
+         </div>
+         <button class="btn" id="next"><img src="arrows.png" alt="arrows" width="40px"></button>
+      </div>
+      <a href="../index.html"> <button id="home">Назад</button></a>
+
+      <div id="modalCardMovie">
+         <button id="closeModal" type="button" aria-label="Close">
+            <span aria-hidden="true">X</span>
+         </button>
+         <h2 id="heading"></h2>
+         <p id="description"></p>
+         <div>
+            <iframe id="trailer" width="550" height="315" src="#" title="YouTube video player" frameborder="0" allow="autoplay; picture-in-picture; web-share" allowfullscreen></iframe>
+         </div>
+      </div>
+
+
+      <div id="modalCardActor">
+         <button id="closeModalActor" type="button" aria-label="Close">
+            <span aria-hidden="true">X</span>
+         </button>
+         <div id="photos">
+            <img id="then" src="#" alt="actors then" width="300px">
+            <img id="now" src="#" alt="actors now" width="300px">
+         </div>
+         <div class="innerText">
+            <h2 id="headingActor"></h2>
+            <p id="descriptionActor"></p>
+         </div>
+      </div>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+   <script src="narnia.js"></script>
+   </body>
+</html>

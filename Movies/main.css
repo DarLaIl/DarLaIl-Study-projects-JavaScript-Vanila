@@ -1,0 +1,83 @@
+body {
+    background-size: cover;
+    background-image: url("wallpaper1.png");
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    opacity: 0;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 36px;
+    box-shadow:  -5px -5px 5px #2a415b,
+                 5px 5px 5px #527eaf;
+}
+
+h1 {
+    opacity: 0;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.list {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.list a {
+    opacity: 0;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+a:hover {
+    text-shadow: 3px 0px 5px #f6f6f6;
+}
+
+@media all and (max-width:1024px) {
+    body {
+        background-position: left;
+    }
+    .container {
+        width: 400px;
+        box-shadow: none;
+    }
+    h1 {
+        font-size: 60px;
+    }
+    .list a {
+        font-size: 50px;
+    }
+}
+@media all and (max-width:1000px) {
+    h1 {
+        font-size: 30px;
+    }
+    .list a {
+        font-size: 25px;
+    }
+}
+@media all and (max-width:500px) {
+    body {
+        background-position: right;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    .list a {
+        font-size: 30px;
+    }
+}
