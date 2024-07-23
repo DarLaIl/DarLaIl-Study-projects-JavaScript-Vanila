@@ -1,4 +1,4 @@
-<h1> Bakery website training project </h1>
+<h1>Bakery website</h1>
 
 <img src="https://cdn.glitch.global/b796fac7-8be1-47ea-bf80-36d588d7054b/mock6.png?v=1706743590735" alt="mockup" width="600px">
 

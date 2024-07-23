@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakery</title>
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11.0.5/swiper-bundle.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Lobster&family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;1,200&family=Rubik+Burned&display=swap" rel="stylesheet">
+</head>
+<body>
+   <div class="wrapper">
+      <header class="header">
+         <div class="header__container">
+            <div class="logo">
+               <img src="peach__logo.png" alt="logo" class="header__logo">
+               <p>Пекарня Персик</p>
+            </div>
+            
+            <div class="header__menu menu">
+               <div class="menu__icon">
+                  <span></span>
+               </div>
+               <nav class="menu__body">
+                  <ul class="menu__list">
+                     <li><a data-goto=".page__section_1" href="#" class="menu__link">О нас</a></li>
+                     <li><a data-goto=".page__section_2" href="#" class="menu__link">Каталог</a></li>
+                     <li><a data-goto=".page__section_3" href="#" class="menu__link">Акции</a></li>
+                     <li><a data-goto=".page__section_4" href="#" class="menu__link">Фото</a></li>
+                     <li><a data-goto=".page__section_5" href="#" class="menu__link">Отзывы</a></li>
+                     <li><a data-goto=".page__section_6" href="#" class="menu__link">Контакты</a></li>
+                  </ul>
+               </nav>
+            </div>
+         </div>
+      </header>
+      <main class="page">
+         <div class="page__video">
+            <video autoplay muted loop id="myVideo" playsinline width="100%">
+               <source src="videobakery-230326-184650.mp4" type="video/mp4">
+            </video>
+            <div class="page__video_text">
+               <h1>Пекарня Персик</h1>
+               <h2>Самое сладкое место в городе.</h2>
+            </div>
+         </div>
+         <section class="page__section page__section_1">
+            <div class="page__section_1_header">
+               <h2 class="page__title">О компании</h2>
+            </div>
+            <!-- о компании -->
+            <div class="page__section_1_content">
+               <div data-aos="fade-right" data-aos-duration="1500" class="page__img">
+                  <img src="photo/shef.jpg" alt="cook">
+               </div>
+               <div data-aos="fade-left" data-aos-duration="1500" class="page__text">
+                  <p>Пекарня "Персик" предлагает услугу изготовления тортов и десертов на заказ. Наши торты и выпечка готовятся по рецептурам, в создании которых участвовали лучшие кондитеры Франции, Германии и других стран
+                  </p>
+                  <p>Мы ручаемся за качество наших тортов, пирожных и других изделий - ведь они сделаны только из отборных и натуральных ингредиентов </p>
+                  <p>Около 90% наших клиентов приходят по рекомендациям знакомых, которым нравится наша продукция. Лучшая реклама - это отзывы довольных клиентов, которыми они с удовольствием делятся со своими друзьями</p>
+               </div>  
+            </div> 
+         </section>
+         <div class="page__section fullscreen"></div>
+         <section class="page__section page__section_2">
+            <!-- Наши предложения -->
+            <h2 class="page__sub-title">Наши предложения</h2>
+            <div class="page__section_2_text">
+               <div class="page__text_catalog">
+                  <div class="page__text_catalog _tab _one">Торты</div>
+                  <div class="page__text_catalog _tab _two">Выпечка</div>
+                  <div class="page__text_catalog _tab _three">Конфеты</div>
+               </div>
+               <div class="page__text_products">
+                  <section data-aos="flip-left" data-aos-duration="1500" class="card">
+                     <img class="productImg" src="photo/4.png" alt="slide" width="200px" height="200px">
+                     <h2 class="card-name">Пралине</h2>
+                     <div class="Text">
+                        <p class="description">Фирменный шоколадный бисквит с добавлением черного шоколада, прослоен шоколадно-молочным муссом в сочетании с прослойкой орехового пралине и вафельной крошки. </p>
+                     </div>
+                  </section>
+                  <section data-aos="flip-left" data-aos-duration="1500" class="card">
+                     <img class="productImg" src="photo/7.png" alt="slide" width="200px" height="200px">
+                     <h2 class="card-name">Банановый рай</h2>
+                     <div class="Text">
+                        <p class="description">Шоколадный бисквит на основе сметаны, который прослаивается сливочным кремом, а затем покрывается легким изысканным чизкейком. Поверх чизкейка идет прослойка из свежих бананов, которые в свою очередь, обливаются нежным шоколадом. </p>
+                     </div>
+                  </section>
+                  <section data-aos="flip-left" data-aos-duration="1500" class="card">
+                     <img class="productImg" src="photo/8.png" alt="slide" width="200px" height="200px">
+                     <h2 class="card-name">Три шоколада</h2>
+                     <div class="Text">
+                        <p class="description"> Знаменитый торт три шоколада мы создаем для истинных гурманов. Деликатная бисквитная основа переплетается с муссом на основе трех шоколадов (белого, молочного и горького). Порадуйте своих близких очень вкусным тортом.</p>
+                     </div>
+                  </section>
+                  <section data-aos="flip-left" data-aos-duration="1500" class="card">
+                     <img class="productImg" src="photo/13.png" alt="slide" width="200px" height="200px">
+                     <h2 class="card-name">Карамель&Шоколад</h2>
+                     <div class="Text">
+                        <p class="description">Это начинка завоевала популярность не просто так. Шоколадные бисквиты, с домашней солёной карамелью и цельным арахисом! Вкус который знаком нам с детства! </p>
+                     </div>
+                  </section>
+                  <section data-aos="flip-left" data-aos-duration="1500" class="card">
+                     <img class="productImg" src="photo/14.png" alt="slide" width="200px" height="200px">
+                     <h2 class="card-name">Морковный</h2>
+                     <div class="Text">
+                        <p class="description"> Мягкий нежный бисквит с добавлением оранжевого кладезя витаминов, изюма и грецкого ореха. А между коржами этого интересного сочетания ингредиентов - слой потрясающего нежного крема на основе сыра маскарпоне .</p>
+                     </div>
+                  </section>
+                  <section data-aos="flip-left" data-aos-duration="1500" class="card">
+                     <img class="productImg" src="photo/15.png" alt="slide" width="200px" height="200px">
+                     <h2 class="card-name">Йогуртовый с клубникой</h2>
+                     <div class="Text">
+                        <p class="description">Начинка воздушная и лёгкая, она отличается ненавязчивым вкусом и низкой калорийностью. В ее основе лежит нежнейший шифоновый бисквит с ванильным ароматом и воздушный мусс на основе обезжиренного йогурта, который мы сочетаем со  кули из свежей клубникой.  </p>
+                     </div>
+                  </section>
+               </div>
+            </div>
+         </section>
+         <div class="page__section fullscreen_two"></div>
+         <section class="page__section page__section_3">
+            <!-- Акции -->
+            <h2 class="page__sub-title">Акции</h2>
+            <div class="page__section_3_content">
+               <div class="page__section_3_text">
+                  <div data-aos="fade-right" data-aos-duration="1500" class="page__img">
+                     <img src="photo/5.jpg" alt="cupcake">
+                  </div>
+                  <div data-aos="fade-left" data-aos-duration="1500" class="page__text">
+                     <p>Только до конца зимы корпоративный заказ кексов с вашим логотипом со скидкой 30%! Спешите!
+                     </p>
+                  </div>  
+               </div>
+               <div class="page__section_3_CountDown">
+                  <div>
+                     <h4>ДО КОНЦА АКЦИИ ОСТАЛОСЬ:</h4>
+                  </div>
+                  <div class="containerCountDown">
+                     <div class="sales">
+                         <div class="block">
+                             <h4 class="days"></h4>
+                         </div>
+                     </div>
+                     <div class="sales">
+                         <div class="block">
+                             <h4 class="hours"></h4>
+                         </div>
+                     </div>
+                     <div class="sales">
+                         <div class="block">
+                             <h4 class="minutes"></h4>
+                         </div>
+                     </div>
+                     <div class="sales">
+                         <div class="block">
+                             <h4 class="seconds"></h4>
+                         </div>
+                     </div>
+                 </div>
+               </div>
+            </div>
+
+         </section>
+         <section class="page__section page__section_4">
+            <!-- Фото -->
+            <h2 class="page__sub-title">Фотогалерея</h2>
+
+            <div class="swiper">
+
+               <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                     <div class="image-slider__image">
+                        <img src="slider/slide1.jpg" alt="slide">
+                     </div>
+                  </div>
+                  <div class="swiper-slide">
+                     <div class="image-slider__image">
+                        <img src="slider/slide2.jpg" alt="slide">
+                     </div>
+                  </div>
+                  <div class="swiper-slide">
+                     <div class="image-slider__image">
+                        <img src="slider/slide3.jpg" alt="slide">
+                     </div>
+                  </div>
+                     <div class="swiper-slide">
+                     <div class="image-slider__image">
+                        <img src="slider/slide4.jpg" alt="slide">
+                     </div>
+                  </div>
+                  <div class="swiper-slide">
+                     <div class="image-slider__image">
+                        <img src="slider/slide5.jpg" alt="slide">
+                     </div>
+                  </div>
+                  <div class="swiper-slide">
+                     <div class="image-slider__image">
+                        <img src="slider/slide6.jpg" alt="slide">
+                     </div>
+                  </div>
+                  <div class="swiper-slide">
+                     <div class="image-slider__image">
+                        <img src="slider/slide7.jpg" alt="slide">
+                     </div>
+                  </div>
+                  <div class="swiper-slide">
+                     <div class="image-slider__image">
+                        <img src="slider/slide8.jpg" alt="slide">
+                     </div>
+                  </div>
+
+                  ...
+               </div>
+               <div class="swiper-pagination"></div>
+
+               <div class="swiper-button-prev"></div>
+               <div class="swiper-button-next"></div>
+            </div>
+         </section>
+         <section class="page__section page__section_5">
+            <!-- Отзывы -->
+            <h2 class="page__sub-title">Отзывы о нас</h2>
+            <div class="page__section_5_text">
+               <section data-aos="fade-up" data-aos-duration="1500" class="card">
+                  <img class="productRevImg" src="rewievs/person1.jpg" alt="slide" width="200px"  >
+                  <h2 class="card-name">Очень довольна!</h2>
+                  <div class="Text">
+                     <p class="description">Очень вкусный торт. Заказала с начинкой красный бархат. Прекрасный вкус, внешний вид как на картинке! Точная доставка. Буду заказывать еще.</p>
+                  </div>
+               </section>
+               <section data-aos="fade-up" data-aos-duration="1500" class="card">
+                  <img class="productRevImg" src="rewievs/person2.jpg" alt="slide" width="200px" >
+                  <h2 class="card-name">Самый вкусный торт!</h2>
+                  <div class="Text">
+                     <p class="description">Спасибо, торт доставили вовремя, сказали очень ароматный, вкусный, такой малины они никогда не видели </p>
+                  </div>
+               </section>
+               <section data-aos="fade-up" data-aos-duration="1500" class="card">
+                  <img class="productRevImg" src="rewievs/person3.jpg" alt="slide" width="200px" >
+                  <h2 class="card-name">Лучший Подарок!</h2>
+                  <div class="Text">
+                     <p class="description">Спасибо курьеру который поздравил с Днём рождения, она была очень тронута!!! Мы из другого города и хотели порадовать ее и благодаря Вам, нам это удалось! Спасибо!!! </p>
+                  </div>
+               </section>
+            </div>
+         </section>
+         <section class="page__section page__section_6">
+            <!-- Контакты -->
+            <h2 class="page__sub-title">Контакты</h2>
+            <div class="page__section_6_text">
+               <div data-aos="fade-left" data-aos-duration="1500" class="page__text" >
+                  <p>Вы можете связаться с нами любым удобным способом или заказать звонок</p>
+                  <p>+7 (123) 123-45-67</p>
+   
+                  <button class="call">Заказать звонок</button>
+                  <p><a href="mailto:mail@example.com">Напишите нам письмо: mail@example.com</a></p>
+                  <p>г. Санкт-Петербург, ул. какая-то 6, Россия</p>
+               </div>
+
+               <div data-aos="fade-right" data-aos-duration="1500" class="page__img">
+                  <img src="photo/shop.jpg" alt="shop">
+               </div>
+            </div>
+
+         </section>
+      </main>
+      <footer class="footer">
+         <img src="footer-230326-184650.jpg" alt="team" width="100%">
+         <div class="page__footer__text">
+            <ul class="footer__menu__list">
+               <li><a data-goto=".page__section_1" href="#" class="footer__menu__link">О нас</a></li>
+               <li><a data-goto=".page__section_2" href="#" class="footer__menu__link">Каталог</a></li>
+               <li><a data-goto=".page__section_3" href="#" class="footer__menu__link">Акции</a></li>
+            </ul>
+            <ul class="footer__menu__list">
+               <li><a data-goto=".page__section_4" href="#" class="footer__menu__link">Фото</a></li>
+               <li><a data-goto=".page__section_5" href="#" class="footer__menu__link">Отзывы</a></li>
+               <li><a data-goto=".page__section_6" href="#" class="footer__menu__link">Контакты</a></li>
+            </ul>
+            <div class="footer__text" >
+               <p>+7 (123) 123-45-67</p>
+               <p>9:00-21:00</p>
+               <p><a href="mailto:mail@example.com">mail@example.com</a></p>
+               <p>г. Санкт-Петербург, ул. какая-то 6, Россия</p>
+            </div>
+         </div>
+         <div class="footer__text">
+            <p>© Сайт создан в учебных целях Ильиной Дарьей</p>
+         </div>
+      </footer>
+   </div>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11.0.5/swiper-bundle.min.js
+   "></script>
+    <script src="script.js"></script>
+ </body>
+</html>
