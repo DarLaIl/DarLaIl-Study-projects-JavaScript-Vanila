@@ -1,0 +1,66 @@
+body {
+    background-color: #c9d6df;
+    height: 100%;
+}
+.gray {
+    background: url(https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTZ8fHNwb3J0fGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60) center / cover no-repeat fixed;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+.gray > div {
+    height: 30vh;
+    width: 50vw;
+    background: rgba(255, 255, 255, 0.39);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.fullscreen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(sport.jpg) center / cover no-repeat fixed;
+    min-height: 90vh; 
+}
+.fullscreen > button {
+    height: 100px;
+}
+.timer {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+.footer {
+    background-color: #212529;
+    color: gray;
+}
+.footer > div {
+    padding: 10px;
+}
+@media all and (max-width:850px) {
+    .gray {
+    background: url(https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTZ8fHNwb3J0fGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60) center / cover no-repeat;
+    background-position: center;
+    }
+    .fullscreen {
+    background: url(https://cdn.glitch.global/573bc8f2-dc26-423c-973e-c037491fbb71/sport.jpg?v=1706014581986) center / cover no-repeat;
+    background-position: center;
+    min-height: 90vh; 
+    }
+}
+@media all and (max-width:550px) {
+  .gray > div {
+    height: 40vh;
+    width: 100vw;
+  }
+}
+@media all and (max-height:500px) {
+  .gray > div {
+    height: 60vh;
+  }
+}
