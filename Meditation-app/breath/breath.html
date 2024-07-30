@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ДЫШИ</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="../pages.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <video autoplay="autoplay" loop="loop" muted defaultMuted playsinline id="myVideo">
+        <source src="breathing.mp4" type="video/mp4">
+    </video>
+    <audio id="player" autoplay loop>
+        <source src="Breathing.mp3" type="audio/mp3">
+    </audio>
+    <audio id="beep">
+        <source src="../beep.mp3" type="audio/mp3">
+    </audio>
+    <div id="main">
+        <div id="header">
+            <h2>Займи удобное положение</h2>
+            <h2>Закрой глаза</h2>
+            <h2>Дыши</h2>
+        </div>
+        <div id="countdown-container">
+            <p id="countdown">5 : 00</p>
+            <button id="start">Начать</button>
+        </div>
+        <button id="btn"><a href="../index.html"><img src="../img/home.png" alt="home" width="50px"></a></button>
+    </div>
+    <script src="../script.js"></script>
+</body>
+</html>
