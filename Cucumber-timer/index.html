@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&#129362 Таймер огурчик</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>  
+    <div class="container">
+        <div>
+            <img id="cucumber" src="img/cucumber.png" alt="cucumber" width="500px">
+        </div>
+        <div class="block">
+            <h1 class="heading">Таймер огурчик</h1>
+            <div class="timer_display">
+                <div class="timerSettings">
+                    <form>
+                        <div class="box">
+                            <label>Выбери время работы: </label>
+                            <select class = "selectedTimeWork">
+                                <option disabled selected>выбери</option>
+                                <option value="1501" class="time" >25 минут</option>
+                                <option value="1201" class="time">20 минут</option>
+                                <option value="901" class="time">15 минут</option>
+                            </select>
+                        </div>
+                        <div class="box">
+                            <label>Выбери время отдыха: </label>
+                            <select class = "selectedTimeRest">
+                                <option disabled selected>выбери</option>
+                                <option value="1201" class="time" >20 минут</option>
+                                <option value="901" class="time">15 минут</option>
+                                <option value="601" class="time">10 минут</option>
+                            </select>
+                        </div>
+                        <div class="box">
+                            <label>Количество периодов работы: </label>
+                            <input id="rounds" type="text" placeholder="Сколько периодов?">
+                        </div>
+                    </form>
+                </div>
+                <div class="timer_display-left"></div>
+                <div id="nowRounds"></div>
+            </div>
+            <div class="buttons">
+                <button id="start" class="control">Старт</button>
+                <button id="restart" class="control">Заново?</button>
+            </div>
+        </div>        
+        <div class="audioBox">
+            <audio id="myAudio" src="song.mp3" loop="loop"></audio>
+            <button id="myBtn" class="play"></button>
+            <p>Музыка для <br> концентрации</p>
+        </div> 
+    </div>
+    <div class="footer">© Дарья Ильина. Сайт выполнен в учебных целях</div>
+    <audio id="beep">
+        <source src="beep.mp3" type="audio/mp3">
+    </audio>      
+    
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="index.js"></script>
+</body>
+</html>

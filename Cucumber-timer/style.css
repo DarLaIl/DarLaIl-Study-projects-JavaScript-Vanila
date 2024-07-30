@@ -1,0 +1,149 @@
+body {
+    background-image: url(img/wall2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+}
+
+.heading {
+    color: #273e08;
+    font-size: 80px;
+    font-family: 'Caveat', cursive;
+    text-shadow: 2px 2px 0 rgba(64, 159, 75, 0.6);
+}
+label {
+    font-family: 'Caveat', cursive;
+    font-size: 35px;
+}
+#rounds, #nowRounds, p {
+    font-family: 'Caveat', cursive;
+    font-size: 20px;
+    color: #273e08;
+    padding: 10px;
+    border-radius: 45px;
+}
+select {
+    font-family: 'Caveat', cursive;
+    font-size: 20px;
+    color: #273e08;
+    border: none;
+    padding: 10px;
+    border-radius: 45px;
+    margin-top: 10px;
+}
+.timer_display {
+    min-height: 200px;
+    min-width: 320px;
+}
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 0;
+    min-height: 95vh;
+}
+.buttons {
+    height: 100px;
+}
+.block {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+.timer_display-left {
+    display: none;
+    font-weight: 400;
+    font-size: 160px;
+    margin: 0;
+    color: #458869;
+    text-shadow: 5px 0 rgba(0,0,0,0.6);
+}
+.control {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    font-family: 'Caveat', cursive;
+    font-size: 40px;
+    width: 400px;
+    height: 50px;
+    border: none;
+    margin: 10px;
+    color: #273e08;
+    background-color: rgba(251, 248, 249, 0.1);
+}
+#pause, #restart {
+    display: none;
+}
+.control:hover {
+    font-size: 50px;
+    color: #458869;
+}
+.play {
+    width: 100px;
+    height: 100px;
+    border: none;
+    background-color: rgba(251, 248, 249, 0.1);
+    background-size: cover;
+    background-image: url(img/play.png);
+}
+.pause {
+    background-image: url(img/pause.png);
+}
+.play:hover, .pause:hover{
+    width: 120px;
+    height: 120px;
+}
+.audioBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}   
+.footer {
+    font-family: 'Caveat', cursive;
+    font-size: 20px;
+}
+
+@media all and (max-width: 820px) {
+    #cucumber{
+        width: 300px;
+    }
+    .heading {
+        font-size: 60px;
+    }
+    .timer_display-left {
+        font-size: 120px;
+    }
+    .control {
+        font-size: 30px;
+        margin: 0;
+    }
+    .audioBox {
+        flex-direction: row;
+    }
+    .control:hover {
+        font-size: 40px;
+    }
+    .play {
+        width: 50px;
+        height: 50px;
+    }
+    .play:hover, .pause:hover{
+        width: 80px;
+        height: 80px;
+    }
+}
+@media all and (max-width: 500px) {
+    .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+}
