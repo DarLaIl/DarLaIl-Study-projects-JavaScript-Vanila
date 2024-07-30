@@ -1,0 +1,256 @@
+body {
+    margin: 0;
+}
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #1e313e;
+    width: 100%;
+    height: 75px;
+}
+.container {
+    width:fit-content;
+    max-width: 1000px;
+    height: 100%;
+}
+
+.itemNav {
+    color: #efd3a2;
+    padding: 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Montserrat',sans-serif;
+}
+.navbarWrap {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+  
+.ham {
+    display: none;
+}
+  
+.popup {
+    display: none;
+}
+  
+.navbarWrap .menu {
+    display: flex;
+}
+
+.section-header {
+    display: flex;
+    justify-content: center;
+}
+.heading {
+    text-transform: uppercase;
+    color: #1e313e;
+    font-size: 30px;
+    font-family: 'Montserrat',sans-serif;
+}
+.section-about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color:#1e313e;
+    padding: 60px;
+}
+.about-us {
+    align-self: center;
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+    font-family: 'Montserrat',sans-serif;
+}
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    background-color:#1e313e;
+    padding: 80px;
+}
+.reason-block {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    color: white;
+    font-size: 16px;
+    font-family: 'Montserrat',sans-serif;
+}
+.reason-block span {
+    background-color: #bb8a5e;
+    color: #1e313e;
+    border-radius: 50px;
+    padding: 15px;
+    font-size: 70px;
+    font-family: 'Montserrat',sans-serif;
+    margin: 40px;
+}
+.services {
+    display: flex;
+    justify-content: center;
+    background-color: #1e313e;
+    padding: 60px;
+}
+.prices {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1e313e;
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+    font-family: 'Montserrat',sans-serif;
+}
+.map {
+    display: flex;
+    justify-content: center;
+    background-color: #1e313e;
+    padding: 50px;
+}
+.footer-container {
+    background-color: #1e313e;
+    padding: 5px;
+}
+.footer {
+    color: #efd3a2;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Montserrat',sans-serif;
+}
+button {
+    background-color: #1e313e;
+    padding: 30px;
+    margin: 10px;
+    border-radius: 30px;
+}
+.fixed {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+}
+
+@media (max-width: 1000px) {
+    .navbarWrap .menu {
+        display: none;
+    }
+
+    .ham {
+        display: flex;
+        align-items: center;
+    }
+
+    .hamField {
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+
+    .bar {
+        display: block;
+        width: 30px;
+        height: 3px;
+        margin: 6px auto;
+        background-color: #fff;
+        transition: 0.2s;
+    }
+
+    .popup {
+        position: fixed;
+        top: 70px;
+        right: -100%;
+        width: 50%;
+        height: 70%;
+        background-color: #1e313e;
+        z-index: 100;
+        display: flex;
+        transition: 0.3s;
+    }
+
+    .popup.open {
+        right: 0;
+    }
+
+    .popup .menu {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        padding: 50px 0;
+        overflow: auto;
+    }
+
+
+    .popup .menu > a {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 20px 0;
+        font-size: 20px;
+        font-weight: bold;
+        color: #efd3a2;
+    }
+
+    .popup .menu > a:hover {
+        background-color: rgba(122, 82, 179, 0.1);
+    }
+
+    .hamField.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamField.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamField.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    body.noscroll {
+        overflow: hidden;
+    }
+}
+
+@media all and (max-width:800px) {
+
+    .wrapper {
+        padding: 0;
+        
+    }
+    .prices {
+        flex-wrap: wrap;
+        padding: 10px; 
+    }
+    div.gmap_canvas, div.mapouter, iframe {
+        width: 100%;
+    }
+    img {
+        max-width: 100%;
+    }
+}
+@media all and (max-width:500px) {
+
+    .bar {
+        padding: 0;
+    }
+    
+    .popup {
+        width: 70%;
+    }
+
+    img{
+        width: 100%;
+    }
+
+    .reason-block span {
+        padding: 10px;
+        margin: 10px;
+    }
+    .reason-block {
+        padding: 10px;
+    }
+} 
