@@ -1,0 +1,26 @@
+.navbar {
+    font-family: 'Roboto', sans-serif;
+}
+section {
+    
+    font-family: 'Roboto', sans-serif;
+}
+.portraitCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @media all and (max-width:800px) {
+    .portraitCard > h2 {
+      display: block;
+      height: 50px;
+      font-size: 35px;
+    }
+    .portraitCard > p {
+      display: block;
+      height: 150px;
+      font-size: 25px;
+    }
+  }
