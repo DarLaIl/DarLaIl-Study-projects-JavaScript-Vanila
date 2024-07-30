@@ -1,0 +1,180 @@
+body {
+    background-image: url(img/castle1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Comfortaa', sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;   
+    position: absolute;
+    top: 280px;
+    right: 0; 
+    background-image: url(img/paper2.png);
+    background-size:auto;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    width: 350px;
+    height: 400px;
+    padding: 10px;
+}
+#btn-container {
+    width: 350px;
+    display: flex;
+    justify-content: space-around;
+}
+.btn {
+    color: black;
+    display: none;
+    width: 120px;
+    background-color: #77b468;
+    padding: 20px;
+    font-size: 15px;
+    border-radius: 50%;
+    border: none;
+    font-family: 'Comfortaa', sans-serif;
+    text-align: center;
+}
+#artefact, #character {
+    display: flex;
+}
+h2 {
+    margin: 15px;
+    font-size: 20px;
+}
+.textBox {
+    display: flex;
+    justify-content: center;
+    text-indent: 15px;
+}
+.quiz {
+    background-color: #c5ebbb;
+    width: 160px;
+    padding: 20px;
+    font-size: 15px;
+    border: none;
+    font-family: 'Comfortaa', sans-serif;
+}
+#startTheGame {
+    color: black;
+    background-color: #77b468;
+    width: 120px;
+    padding: 20px;
+    font-size: 15px;
+    border-radius: 50%;
+    border: none;
+    font-family: 'Comfortaa', sans-serif;
+}
+#startTheGame:hover, .btn:hover {
+    font-size: 17px;
+    width: 130px;
+}
+#dialog {
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    padding: 20px;
+    font-weight: bolder;
+    color: rgb(58, 34, 3);
+    background: rgba(249, 202, 140, 0.4);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(11.5px);
+    -webkit-backdrop-filter: blur(11.5px);
+    border: 1px solid rgba(249, 202, 140, 1)
+}
+.winWin, .gameOver {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+@media all and (max-width:1200px) {
+    body {
+        background-image: url(img/castleSmall.jpg);
+        background-position: center;
+        align-items: flex-start;
+    }
+    #container {
+        top: 650px;
+        right: 0; 
+    }
+
+    #dialog {
+        width: 800px;
+        margin-top: 100px;
+    }
+    h2 {
+        font-size: 25px;
+    }
+    .textBox {
+        font-size: 23px;
+    }
+}
+
+@media all and (max-width:800px) {
+    body {
+        background-image: url(img/castleSmall.jpg);
+        background-position: center;
+        align-items: flex-start;
+    }
+    #container {
+        top: 400px; 
+        width: 300px;
+        height: 240px;
+    }
+    #btn-container {
+        width: 200px;
+    }
+    #bigLogo {
+        width: 100px;
+    }
+    #logo, #chat, #boxOne {
+        width: 50px;
+        height: 50px;
+    }
+    #dialog {
+        width: 300px;
+        margin-top: 0;
+        padding: 5px;
+    }
+    h2 {
+        font-size: 15px;
+    }
+    #artefact, #character {
+        font-size: 13px;
+        margin: 0;
+    }
+    .textBox {
+        font-size: 13px;
+    }
+    .quiz {
+        width: 100px;
+        padding: 5px;
+        font-size: 12px;
+    }
+    #startTheGame {
+        width: 100px;
+        padding: 10px;
+        font-size: 13px;
+    }
+    #startTheGame:hover, .btn:hover {
+        font-size: 15px;
+        width: 110px;
+    }
+    .btn {
+        width: 100px;
+        padding: 10px;
+        font-size: 14px;
+    }
+}
