@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Погода</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="header">
+        <input type="text" id="input" spellcheck="false" placeholder="Введите название города">
+    </div>
+    <div id="container">
+        <img src="https://cdn.glitch.global/fc407594-1f06-458d-b57f-094fc8e9c106/phone.png?v=1701352692406" alt="phone">
+        <div id="when-where">
+            <p id="city"></p>
+            <p id="date"></p>
+        </div>
+        <div id="now">
+            <p id="temperature"></p>
+            <p id="feelsLike"></p>
+            <p id="conditions"></p>
+            <p id="variation"></p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
