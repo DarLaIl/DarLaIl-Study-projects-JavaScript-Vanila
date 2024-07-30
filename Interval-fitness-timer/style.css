@@ -1,0 +1,212 @@
+body {
+    margin: 0;  
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+}
+#main {
+    margin-top: 50px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 60px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+#header, #countdown-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    text-align: center;
+    font-family: 'Comfortaa', sans-serif;
+    color:#000000;
+}
+#countdown-container {
+    display: none;
+}
+h2 {
+    font-size: 43px;
+    margin: 0;  
+}
+#workout, #rest, #rounds {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+label, p {
+    font-size: 18px;
+    font-weight: bolder;
+    width: 250px;
+}
+input {
+    font-family: 'Comfortaa', sans-serif;
+    color:#000000;
+    font-weight: bolder;
+    text-align: center;
+    width: 120px;
+    height: 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+}
+#go {
+    font-size: 30px;
+    font-family: 'Comfortaa', sans-serif;
+    background: rgba(109, 45, 22, 0.35);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(11.5px);
+    -webkit-backdrop-filter: blur(11.5px);
+    color:#ffffff;
+    padding: 10px;
+    width: 400px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+}
+#go:hover {
+    background: rgba(109, 45, 22, 0.6);
+    cursor: pointer;
+}
+.timer {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: baseline;
+    width: 500px;
+    font-family: 'Comfortaa', sans-serif;
+    color:#ffffff;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.timerBig {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    font-family: 'Comfortaa', sans-serif;
+    background: rgba(59, 121, 160, 0.5);
+    backdrop-filter: blur(11.5px);
+    -webkit-backdrop-filter: blur(11.5px);
+    color:#ffffff;
+    padding: 10px;
+    width: 400px;
+    height: 150px;
+    border: none;
+    border-radius: 20px;
+}
+
+#controlButtons {
+    margin-top: 10px;
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+}
+#start, #stop, #restart {
+    font-size: 20px;
+    font-family: 'Comfortaa', sans-serif;
+    background: rgba(26, 93, 26, 0.35);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(11.5px);
+    -webkit-backdrop-filter: blur(11.5px);
+    color:#ffffff;
+    padding: 10px;
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+}
+#stop {
+    display: none;
+}
+#start:hover, #stop:hover, #restart:hover {
+    background: rgba(26, 93, 26, 0.6);
+    cursor: pointer;
+}
+#myVideoIntro {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+#myVideoWorkOut{
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+#IntroMusic {
+    cursor: pointer;
+    margin: 10px;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 13px;
+    color:#000000;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+}
+.footer {
+  min-width: 100%;
+  align-self: flex-end;
+  color:#ffffff;
+}
+.footer > p {
+  font-size: 15px;
+  font-family: 'Comfortaa', sans-serif;
+  width: 100%;
+}
+@media all and (max-width:500px){
+    #myVideoIntro {
+        left: -500px;
+        bottom: 0;
+    }
+    #myVideoWorkOut{
+        top: 0;
+        right: -50%;
+    }
+    #header, #countdown-container {
+        width: 270px;
+    }
+    #go {
+        font-size: 30px;
+        width: 200px;
+    }
+    h2 {
+        font-size: 25px;
+    }
+    label, p {
+        font-size: 15px;
+        width: 180px;
+    }
+    .timer {
+        width: 250px;
+        font-size: 20px;
+        margin-left: -30px;
+    }
+    .timerBig {
+        font-size: 60px;
+        padding: 10px;
+        width: 200px;
+    }
+    
+    #controlButtons {
+        width: 200px;
+    }
+    #start, #stop, #restart {
+        font-size: 18px;
+        width: 80px;
+        padding: 5px;
+    }
+}

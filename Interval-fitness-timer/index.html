@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интервальный таймер</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <h2>Интервальный таймер</h2>
+            <h3>Настрой свой таймер:</h3>
+            <button id="IntroMusic">Включить музыку</button>
+            <form>
+                <div id="workout">
+                    <label>Тренировка</label>
+                    <span>
+                        <input class="input" type="text" id="minWork" placeholder="Минуты">
+                        <span>:</span>
+                        <input class="input" type="text" id="secWork" placeholder="Секунды">  
+                    </span>
+  
+                </div>
+                <div id="rest">
+                    <label>Отдых</label>
+                    <span>
+                        <input class="input" type="text" id="minRest" placeholder="Минуты">
+                        <span>:</span>
+                        <input class="input" type="text" id="secRest" placeholder="Секунды">
+                    </span>
+                </div>
+                <div id="rounds">
+                    <label>Количество подходов</label>
+                    <span>
+                        <input class="input" type="text" id="roundsAll" placeholder="Подходы">
+                    </span>
+                </div>
+            </form>
+            <button id="go">Начать</button>
+        </div>
+        
+        <div id="countdown-container"> 
+            <div class="timer_panel">
+                <div class="timer count">
+                    <p>Подход</p>
+                    <div>
+                        <span id="times">1</span>
+                        <span>/</span>
+                        <span id="allTimes">10</span> 
+                    </div>
+                </div>
+                <div class="timer work">
+                    <p>Время подхода</p>
+                    <div>
+                        <span id="timerMinWork">00</span>
+                        <span>:</span>
+                        <span id="timerSecWork">00</span>
+                    </div>
+                </div>       
+                <div class="timer rest">
+                    <p>Время отдыха</p>
+                    <div>
+                        <span id="timerMinRest">00</span>
+                        <span> : </span>
+                        <span id="timerSecRest">00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="timerBig">
+                <span id="timerMinutes">00</span>
+                <span>:</span>
+                <span id="timerSeconds">00</span>
+            </div>
+            <div id="controlButtons">
+                <button id="start">Старт</button>
+                <button id="stop">Пауза</button>
+                <button id="restart">Сброс</button>
+            </div>
+        </div> 
+    </div>
+    
+    <video autoplay="autoplay" loop="loop" muted defaultMuted playsinline id="myVideoIntro">
+        <source src="https://cdn.glitch.global/a9f5b1b0-f981-4429-9039-7a2e5225b94a/fitness.mp4?v=1702236166687" type="video/mp4">
+    </video>
+    <video autoplay="autoplay" loop="loop" muted defaultMuted playsinline id="myVideoWorkOut">
+        <source src="https://cdn.glitch.global/a9f5b1b0-f981-4429-9039-7a2e5225b94a/plank.mp4?v=1702236163649" type="video/mp4">
+    </video>
+    <audio id="player" autoplay="autoplay" loop="loop">
+        <source src="https://cdn.glitch.global/a9f5b1b0-f981-4429-9039-7a2e5225b94a/intro.mp3?v=1702236169103" type="audio/mp3">
+    </audio>
+    <audio id="beep">
+        <source src="https://cdn.glitch.global/a9f5b1b0-f981-4429-9039-7a2e5225b94a/beep.mp3?v=1702236164337" type="audio/mp3">
+    </audio>
+
+          <div class="footer">
+            <p>© Сайт сделан в учебных целях Ильиной Дарьей</p>
+         </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>
+</html>
