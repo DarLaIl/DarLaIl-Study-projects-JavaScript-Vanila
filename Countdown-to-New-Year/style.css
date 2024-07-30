@@ -1,0 +1,170 @@
+body {
+    background-color: #d73031;
+    margin: 0;
+}
+#wallpaper {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+}
+#wallpapersmall{
+    display: none;
+}
+.content {
+    position: relative;
+}
+.intro {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.heading {
+    color: white;
+    text-align: center;
+    font-size: 60px;
+    margin-left: 100px;
+    font-family: 'PT Sans', sans-serif;
+}
+.container {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.christmas {
+    background-color: rgba(251, 248, 249, 0.84);
+    height: 250px;
+    width: 200px;
+    margin-top: 30px;
+    margin-right: 10px;
+    border: 3px solid black;
+    border-radius: 50px;
+}
+.block {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.days, .minutes, .hours, .seconds {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'PT Sans', sans-serif;
+}
+.new {
+    font-size: 80px;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-family: 'PT Sans', sans-serif;
+}
+.play {
+    width: 120px;
+    height: 120px;
+    border: none;
+    background-image: url(img/play.png);
+    background-size: contain;
+    border-radius: 50%;
+}
+.pause {
+    background-image: url(img/pause.png);
+}
+.box {
+    display: flex;
+    justify-content: flex-start;  
+}
+.containerTwo {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.movie {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 20px;
+}
+img {
+    width: 400px;
+    height: 500px;
+}
+.input-field {
+    display: flex;
+    padding: 0 60px;
+}
+#search {
+    flex: 1;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 15px;
+    padding: 10px;
+}
+a { 
+    color: #ffffff;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+@media all and (max-width: 820px) {
+    .container, .box, .intro {
+        justify-content: center;
+    }
+    .heading {
+        font-size: 40px;
+        padding: 10px;
+        margin-left: 10px;
+    }
+    .christmas {
+        height: 220px;
+        width: 100px;
+    }
+    .days, .minutes, .hours, .seconds {
+        font-size: 30px;
+    }
+    .new {
+        font-size: 40px;
+    }
+}
+@media all and (max-width: 500px) {
+    .container, .box, .intro {
+        justify-content: center;
+    }
+    #wallpaper {
+        display: none;
+    }
+    #wallpapersmall{
+        display: block;
+        position: fixed;
+        height: 100vh;
+        width: 100vw;
+        z-index: 0;
+    }
+    .heading {
+        background-color: rgba(251, 248, 249, 0.84);
+        color: #d73031;
+        font-size: 30px;
+        padding: 10px;
+        margin-left: 5px;
+        border: 3px solid black;
+        border-radius: 50px;
+    }
+    .christmas {
+        height: 120px;
+        width: 80px;
+        margin-right: 5px;
+    }
+    .days, .minutes, .hours, .seconds {
+        font-size: 18px;
+    }
+    .new {
+        font-size: 30px;
+    }
+    img {
+        width: 250px;
+        height: 350px;
+    }
+    a {
+        font-size: 25px;
+    }
+}
