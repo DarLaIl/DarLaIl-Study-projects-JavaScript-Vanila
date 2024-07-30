@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Квиз по Гарри Поттеру</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container">
+    <div class="blockOne">
+        <h1>Квиз по Гарри Поттеру</h1>
+        <div class="audioBox">
+          <audio id="myAudio" src="https://cdn.glitch.global/dfc7ac56-ca75-42d7-b9b5-09a1fd7067f7/song.mp3?v=1698939453064" loop="loop" autoplay="allowed"></audio>
+            <svg id="Hallows" data-name="Hallows" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"> 
+              <defs>
+                <filter id="shadow" class="shadow">
+                  <feDropShadow dx="10" dy="10" stdDeviation="6" flood-color="#ffffff" />
+                </filter>
+              </defs>
+              <g id="rUEtpA">
+              <path d="M162,791.72c2.63-.64,2.94-3.2,4-5q166-288.07,331.88-576.2c.78-1.35,1.6-2.68,2.36-3.94,2.3.12,2.49,2,3.2,3.27Q669.37,497.9,835.24,786c4.27,7.4,4.24,7.43-4.32,7.43q-330.76,0-661.52,0c-2.48,0-5-.24-7.43-.36ZM485.92,598V471.23c0-17.89,0-17.89-17.28-14.23-71.53,15.15-121.35,84.74-112.58,157.27,7.81,64.57,55.37,114.66,119.92,126.32,9.94,1.8,9.94,1.8,9.94-8.47Q485.94,665,485.92,598Zm31.22-.41V717.43c0,5.65.21,11.3-.06,16.94-.25,5.41.87,8.29,7.18,6.15,3.81-1.29,8-1.54,11.9-2.52,71.7-17.85,119-90.16,106.64-163.1-10.34-61.22-59.39-110.63-118.23-119.62-6.64-1-7.55,1-7.53,6.78C517.22,507.22,517.14,552.38,517.14,597.54Zm55,163.83c.81.07,1.61.21,2.42.21q102.26,0,204.52.06c7.16,0,3.87-3.12,2.28-5.86q-50.54-87.63-101.17-175.19c-.92-1.58-1.17-3.92-4.18-4.52,2.35,38.52-3.13,75.28-22.31,109.1S605.46,742.16,572.13,761.37ZM427.66,760.2q-107.82-56.28-105.08-178a10.09,10.09,0,0,0-2.61,3Q271.34,670.08,222.73,755c-3.75,6.55-3.74,6.58,3.86,6.58q97.57,0,195.17,0C423.43,761.51,425.31,762.29,427.66,760.2Zm-32.4-306.33.83,1a20.86,20.86,0,0,0,2.84-1.41c24.53-17.13,51.59-27.54,81.41-30.52,4.89-.49,5.63-3.35,5.63-7.44-.07-37.48,0-75-.1-112.44,0-1.31.91-3.27-1.92-3.9Zm213.91,3.55L519,301.2c-1.56,1.21-1.79,2-1.79,2.81q0,56.53-.09,113.08c0,4.52,2.21,5.58,6.16,6.1a175.25,175.25,0,0,1,82.42,33.51C606.49,457.3,607.23,458.43,609.17,457.42Z" fill="url(#a)" filter="url(#shadow)"/></g>
+            </svg>
+          <button id="musicButton" class="play">Музыка</button>
+        </div>      
+    </div>
+    <div class="blockTwo">
+      <button id="back" class="btn1">Назад<img src="https://cdn.glitch.global/dfc7ac56-ca75-42d7-b9b5-09a1fd7067f7/back.png?v=1698939411842" alt="back" width="50px"></button>
+      <form>
+        <div class="questions" id="question0">
+          <h2>Тест по миру «Гарри Поттера»: Только 100%-ный фанат ответит на все вопросы</h2>
+          <p>Чтобы пройти этот тест, нужно быть фанатом до мозга костей. Прочитать книги, посмотреть все фильмы, не по одному разу пройти игры и провести бесчисленное количество часов, читая фанфики и статьи на фандоме. Докажите, что разбираетесь в теме.</p>
+        </div>
+        <div class="questions" id="question1">
+          <label>Какого заклинания не существует?</label> <br>
+          <input type="radio" name="question1">Капациус Экстремис <br>
+          <input type="radio" name="question1">Аква Эрукто <br> 
+          <input type="radio" name="question1">Орхидеус <br>
+          <input type="radio" name="question1" class="answer">Модус Вивенди <br> 
+        </div>
+        <div class="questions" id="question2">
+            <label>Наряд какого цвета надела Гермиона для Святочного бала (по книге)?</label> <br>
+            <input type="radio" name="question2">Красно-золотого <br>
+            <input type="radio" name="question2" class="answer">Небесно-голубого <br>
+            <input type="radio" name="question2">Пурпурно-розового <br>
+            <input type="radio" name="question2">Зеленого <br>
+        </div>
+        <div class="questions" id="question3">
+            <label>Северус Снейп изобрёл несколько выдающихся заклинаний. <br> Кроме одного. Какое лишнее?</label> <br>
+            <input type="radio" name="question3">Оглохни <br>
+            <input type="radio" name="question3">Сектумсемпра <br>
+            <input type="radio" name="question3" class="answer">Оживи <br>
+            <input type="radio" name="question3">Левикорпус <br>
+        </div>
+        <div class="questions" id="question4">
+            <label>Какое из этих магических существ вывел Хагрид?</label> <br>
+            <input type="radio" name="question4">Гиппогриф <br>
+            <input type="radio" name="question4">Флоббер-червь <br>
+            <input type="radio" name="question4">Карликовый пушистик <br>
+            <input type="radio" name="question4" class="answer">Соплохвост <br>
+        </div>
+        <div class="questions" id="question5">
+            <label>На что Гарри Поттер потратил призовые деньги, полученные после победы в Турнире Трёх Волшебников?</label> <br>
+            <input type="radio" name="question5">Праздник в Трех Метлах <br>
+            <input type="radio" name="question5">Анонимно передал отцу Седрика <br>
+            <input type="radio" name="question5" class="answer">Отдал Фреду и Джоржу <br>
+            <input type="radio" name="question5">Положил в гринготс <br>
+        </div>
+        <button class="questions" type="submit" id="btn">Отправить ответы</button>
+        <img class="harry" src="https://cdn.glitch.global/dfc7ac56-ca75-42d7-b9b5-09a1fd7067f7/Harry.png?v=1698939419664" alt="Harry" width="180px">
+      </form>
+      <button class="reset">
+        Заново
+      </button>
+      <button id="next" class="btn2">Дальше<img src="https://cdn.glitch.global/dfc7ac56-ca75-42d7-b9b5-09a1fd7067f7/next.png?v=1698939504258" alt="next" width="50px"></button>
+    </div>
+  </div>
+        <div class="footer">
+            <p>© Сайт сделан в учебных целях Ильиной Дарьей</p>
+        </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>  
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="script.js"></script>
+</body>
+</html>
